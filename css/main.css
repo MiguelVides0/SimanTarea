@@ -23,13 +23,14 @@
 .navbarLogo{
     width: 50%;
 }
-.navbar ul li {
+.navbar ul li a{
     color: var(--text-color);
     font-family: 'Arial', sans-serif;
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
     padding: 5px 10px;
+    text-decoration: none;
 }
 .navbar ul li:hover {
     opacity: 0.8;
@@ -59,6 +60,7 @@
     font-size: 1.2rem;
     max-width: 600px;
     margin: 0 auto 25px;
+    font-family: 'montserrat', sans-serif
 }
 
 .header button {
@@ -75,4 +77,428 @@
 .header button:hover {
     background-color: #8c2a2f;
     transform: translateY(-2px);
+}
+/* Espacio de departamentos */
+
+.deptos h1{
+    font-family: montserrat, sans-serif;
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 1.2rem;
+}
+.depto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'montserrat', sans-serif;
+}
+
+.depto div {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.depto div:hover {
+    transform: translateY(-5px);
+}
+
+.depto div img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.depto div h3 {
+    color: #a83338;
+    margin: 15px 0 5px;
+    font-size: 1.5rem;
+}
+
+.depto div p {
+    color: #666;
+    padding: 0 15px;
+}
+
+.depto div button {
+    background: #a83338;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 15px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.depto div button {
+    background: #8c2a2f;
+}
+
+/* Sección Más Vendidos */
+.vendidos {
+    padding: 30px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+    font-family: 'montserrat', sans-serif;
+}
+
+.vendidos h2{
+    color: #a83338;
+    margin-bottom: 1.5rem;
+}
+
+.vendidos-contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+.producto {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.producto img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.producto h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.producto p {
+    font-weight: bold;
+    color: #a83338;
+    margin: 10px 0;
+}
+
+.producto button {
+    background: #a83338;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.boton:hover {
+    background: #8c2a2f;
+}
+
+/*Ofertas */
+.ofertas {
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #a83338 0%, #8c2a2f 100%);
+    color: white;
+    margin: 30px 0;
+}
+
+.banner-contenido {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'montserrat', sans-serif;
+}
+
+.banner-titulo {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.banner-subtitulo {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.descuentos-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.descuento-item {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 200px;
+    transition: transform 0.3s;
+}
+
+.descuento-item:hover {
+    transform: scale(1.05);
+}
+
+.porcentaje {
+    font-size: 2.5rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #ffd700;
+}
+
+.banner-btn {
+    background: white;
+    color: #a83338;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+    margin-top: 20px;
+}
+
+/*Reporte de Problemas */
+.reporte-problema {
+    background-color: #f8d7da;
+    border-left: 4px solid #a83338;
+    padding: 20px;
+    margin: 30px 0;
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.reporte-problema h2 {
+    color: #a83338;
+    margin-top: 1.2rem;
+    font-size: 1.5rem;
+}
+
+.reporte-problema p {
+    color: #721c24;
+    margin-top: 1.3rem;
+    margin-bottom: 1.3rem;
+}
+
+.reporte-problema button {
+    background-color: #a83338;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+.reporte-problema button a{
+    text-decoration: none;
+    color: white;
+}
+
+.reporte-problema button:hover {
+    background-color: #8c2a2f;
+}
+
+/*Footer*/
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-contenido {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-columna h3 {
+    color: #a83338;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.footer-columna ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-columna li {
+    margin-bottom: 10px;
+    color: #ddd;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social a:hover {
+    color: #a83338;
+}
+
+.footer-copyright {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    color: #999;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 1024px) {
+    .depto {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .vendidos-contenedor {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+
+    .footer-contenido {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .header img {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbarLogo {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .header img {
+        width: 60%;
+    }
+
+    .header p {
+        font-size: 1rem;
+    }
+
+    .depto {
+        grid-template-columns: 1fr;
+    }
+
+    .vendidos-contenedor {
+        grid-template-columns: 1fr;
+    }
+
+    .banner-titulo {
+        font-size: 2rem;
+    }
+
+    .banner-subtitulo {
+        font-size: 1.1rem;
+    }
+
+    .descuento-item {
+        min-width: 150px;
+    }
+
+    .reporte-problema {
+        padding: 15px;
+    }
+
+    .footer-contenido {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .social {
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 30px 10px;
+    }
+
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .header p {
+        font-size: 0.9rem;
+    }
+
+    .header button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .depto div h3 {
+        font-size: 1.2rem;
+    }
+
+    .depto div p {
+        font-size: 0.9rem;
+    }
+
+    .vendidos h2,
+    .deptos h1 {
+        font-size: 1.5rem;
+    }
+
+    .producto p {
+        font-size: 0.9rem;
+    }
+
+    .banner-titulo {
+        font-size: 1.8rem;
+    }
+
+    .banner-subtitulo {
+        font-size: 1rem;
+    }
+
+    .banner-btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    .reporte-problema h2 {
+        font-size: 1.2rem;
+    }
+
+    .footer-columna h3 {
+        font-size: 1rem;
+    }
 }

@@ -12,15 +12,15 @@
 </head>
 <body>
     <nav class="navbar">
-        <ul class="navbar__list">
+        <ul>
             <li>
                 <img class="navbarLogo" src="https://res.cloudinary.com/de5c3xwcv/image/upload/v1749439219/siman_eepged.svg" alt="Logo Siman">
             </li>
-            <li>Departamentos</li>
-            <li>Más vendido</li>
-            <li>Ofertas</li>
-            <li>Reporta un problema</li>
-            <li>Contáctanos</li>
+            <li><a href="#Departamentos">Departamentos</a></li>
+            <li><a href="#Ofertas">Ofertas</a></li>
+            <li><a href="#MasVendidos">Más vendido</a></li>
+            <li><a href="#Problema">Reporta un problema</a></li>
+            <li><a href="#Contacto">Contáctanos</a></li>
         </ul>
     </nav>
     <header class="header">
@@ -31,7 +31,139 @@
     </header>
 
     <main>
-        <section class="deptos"></section>
+        <section class="deptos" id="Departamentos">
+            <h1>Departamentos</h1>
+            <div class="depto">
+                <div>
+                    <img src="https://res.cloudinary.com/de5c3xwcv/image/upload/v1749444900/Ropa_mb3wi4.jpg" alt="Ropa">
+                    <h3>Ropa</h3>
+                    <p>Moda para toda la familia</p>
+                    <button>Ver productos</button>
+                </div>
+
+                <div>
+                    <img src="https://res.cloudinary.com/de5c3xwcv/image/upload/v1749444901/Electronicos_dkjkvj.jpg" alt="Electrónicos">
+                    <h3>Electrónicos</h3>
+                    <p>Tecnología de última generación</p>
+                    <button>Ver productos</button>
+                </div>
+
+                <div>
+                    <img src="https://res.cloudinary.com/de5c3xwcv/image/upload/v1749444897/Hogar_zlr7kf.jpg" alt="Hogar">
+                    <h3>Hogar</h3>
+                    <p>Todo para tu casa</p>
+                    <button>Ver productos</button>
+                </div>
+
+                <div>
+                    <img src="https://res.cloudinary.com/de5c3xwcv/image/upload/v1749444897/Zapatos_xwktqa.jpg" alt="Zapatería">
+                    <h3>Zapatería</h3>
+                    <p>Calzado para todas las edades</p>
+                    <button>Ver productos</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="ofertas" id="Ofertas">
+            <div class="banner-ofertas">
+                <div class="banner-contenido">
+                    <h2 class="banner-titulo">🔥 Ofertas Especiales 🔥</h2>
+                    <p class="banner-subtitulo">Descuentos desde el 25% hasta el 75%</p>
+                
+                    <div class="descuentos-grid">
+                        <div class="descuento-item">
+                            <span class="porcentaje">25% OFF</span>
+                            <p>En electrónicos seleccionados</p>
+                        </div>
+                    
+                        <div class="descuento-item">
+                            <span class="porcentaje">50% OFF</span>
+                            <p>En ropa de temporada</p>
+                        </div>
+                    
+                        <div class="descuento-item">
+                            <span class="porcentaje">75% OFF</span>
+                            <p>En liquidación de hogar</p>
+                        </div>
+                </div>
+                
+                </div>
+            </div>
+        </section>
+
+        <section class="vendidos" id="MasVendidos">
+            <h2 class=>Más Vendidos</h2>
+            <div class="vendidos-contenedor">
+                <div class="producto">
+                    <img src="https://res.cloudinary.com/de5c3xwcv/image/upload/v1749446789/iphone_aqwyvj.webp" alt="iPhone 13">
+                    <h3>iPhone 13</h3>
+                    <p>$899</p>
+                    <button>Comprar</button>
+                </div>
+
+                <div class="producto">
+                    <img src="https://res.cloudinary.com/de5c3xwcv/image/upload/v1749446789/nike_ddtnwx.webp" alt="Zapatillas">
+                    <h3>Zapatillas Nike</h3>
+                    <p>$120</p>
+                    <button >Comprar</button>
+                </div>
+
+                <div class="producto">
+                    <img src="https://res.cloudinary.com/de5c3xwcv/image/upload/v1749446790/smarttv_n7bhpx.jpg" alt="Smart TV">
+                    <h3>Smart TV 4K</h3>
+                    <p>$699</p>
+                    <button>Comprar</button>
+                </div>
+
+                <div class="producto">
+                    <img src="https://res.cloudinary.com/de5c3xwcv/image/upload/v1749446790/cafetera_kb9t2z.webp" alt="Cafetera">
+                    <h3>Cafetera</h3>
+                    <p>$89</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="reporte-problema" id="Problema">
+            <h2>¿Algún problema con tu compra?</h2>
+            <p>Estamos aquí para ayudarte. Reporta cualquier inconveniente y lo resolveremos.</p>
+            <button><a href="problemas.html" target="_blank">Reportar problema</a></button>
+        </section>
     </main>
+
+    <footer class="footer" id="Contacto">
+        <div class="footer-contenido">
+                <div class="footer-columna">
+                    <h3>Contacto</h3>
+                        <ul>
+                            <li>📞 Tel: (503) 2123-4567</li>
+                            <li>✉️ Email: info@siman.com</li>
+                            <li>📍 Dirección: Centro Comercial Metrocentro, San Salvador</li>
+                        </ul>
+                </div>
+                
+                <div class="footer-columna">
+                    <h3>Horarios</h3>
+                        <ul>
+                            <li>Lunes a Viernes: 9:00 AM - 8:00 PM</li>
+                            <li>Sábados: 9:00 AM - 9:00 PM</li>
+                            <li>Domingos: 10:00 AM - 7:00 PM</li>
+                        </ul>
+                </div>
+                
+                <div class="footer-columna">
+                    <h3>Redes Sociales</h3>
+                        <div class="social">
+                            <a href="#">📱 Facebook</a>
+                            <a href="#">📸 Instagram</a>
+                            <a href="#">🐦 Twitter</a>
+                        </div>
+                </div>
+        </div>
+            
+         <div class="footer-copyright">
+            <p>© 2025 Miguel Vides /Siman - Todos los derechos reservados</p>
+        </div>
+    </footer>
 </body>
 </html>
