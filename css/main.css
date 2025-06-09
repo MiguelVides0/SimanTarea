@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Informacion del Navbar*/
+.navbar {
+    background-color: #a83338;
+    padding: 10px 0;
+    width: 100%;
+    color: white;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.navbarLogo{
+    width: 50%;
+}
+.navbar ul li {
+    color: var(--text-color);
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 5px 10px;
+}
+.navbar ul li:hover {
+    opacity: 0.8;
+    transform: translateY(-2px);
+}
+
+/*Banner de bienvenida a la página*/
+.header {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 0;
+}
+
+.header h1 {
+    color: #a83338;
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+.header img{
+    width: 30%;
+}
+
+.header p {
+    color: #333;
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 25px;
+}
+
+.header button {
+    background-color: #a83338;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.header button:hover {
+    background-color: #8c2a2f;
+    transform: translateY(-2px);
+}
