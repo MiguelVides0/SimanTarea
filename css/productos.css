@@ -1,0 +1,90 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #a83338;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+h2 {
+    border-bottom: 2px solid #a83338;
+    padding-bottom: 10px;
+    margin: 40px 0 20px;
+}
+
+.productos {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.producto {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+}
+
+.producto img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+.producto h3 {
+    margin: 15px 0 5px;
+    font-size: 1.1rem;
+    padding: 0 10px;
+}
+
+.precio {
+    font-weight: bold;
+    color: #a83338;
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.producto button {
+    background: #a83338;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.producto button:hover {
+    background: #8c2a2f;
+}
+
+@media (max-width: 600px) {
+    .grid-productos {
+        grid-template-columns: 1fr;
+    }
+}

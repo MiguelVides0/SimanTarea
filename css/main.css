@@ -141,6 +141,11 @@
     background: #8c2a2f;
 }
 
+.prods{
+    text-decoration: none;
+    color: white;
+}
+
 /* Sección Más Vendidos */
 .vendidos {
     padding: 30px 20px;
